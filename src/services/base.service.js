@@ -8,11 +8,17 @@ class BaseService {
     }
 
     async updateOne(id, data) {
-        return await this.model.findByIdAndUpdate({_id: id}, data, { new: true })
+        return await this.model.findByIdAndUpdate({
+            _id: id
+        }, data, {
+            new: true
+        })
     }
 
     async deleteOne(id) {
-        return await this.model.findByIdAndDelete({_id: id})
+        return await this.model.findByIdAndDelete({
+            _id: id
+        })
     }
 
     async findOne(filter) {

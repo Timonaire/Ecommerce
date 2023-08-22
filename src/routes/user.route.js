@@ -1,9 +1,20 @@
-const { Router } = require("express");
-const { getUsers, getUser, updateUser, deleteUser } = require("../controllers/user.controller");
+const {
+  Router
+} = require("express");
+const {
+  getUsers,
+  getUser,
+  updateUser,
+  deleteUser
+} = require("../controllers/user.controller");
 const validator = require("../middlewares/validator.middleware");
-const { UpdateUserSchema } = require("../schemas/user.schema");
+const {
+  UpdateUserSchema
+} = require("../schemas/user.schema");
 const authenticate = require("../middlewares/authenticate");
-const { uploadAvatar } = require("../middlewares/upload.middleware");
+const {
+  uploadAvatar
+} = require("../middlewares/upload.middleware");
 
 const userRouter = Router();
 

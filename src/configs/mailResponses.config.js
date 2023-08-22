@@ -1,7 +1,7 @@
 module.exports = {
-    welcome: {
-      subject: `Enjoy a thrilling shopping experience with merrymarketer`,
-      body: ` 
+  welcome: {
+    subject: `Enjoy a thrilling shopping experience with merrymarketer`,
+    body: ` 
           <p>Welcome to Merrymarketer, your one-stop destination for desired finds and hidden treasures! We are thrilled to have you as part of our growing community of shoppers.</p>
           <br>
           <p>Prepare yourself for an exceptional shopping experience where you can discover remarkable items at unbeatable prices.</p>
@@ -21,114 +21,113 @@ module.exports = {
           <p>Merry Shopping!</p>
           <br>
           `,
-    },
-    accountCreated: {
-      subject: `Account Created Successfully!`,
-      body: `
+  },
+  accountCreated: {
+    subject: `Account Created Successfully!`,
+    body: `
           <p>Your account has been created successfully!</p>
           <b>
           <p>Merry Shopping!</p>
           <b>  
           `,
-    },
-    loggedIn: {
-      subject: `Account Login Successful!`,
-      body: `
+  },
+  loggedIn: {
+    subject: `Account Login Successful!`,
+    body: `
           <p>Your account was just logged into. If this was you, kindly ignore this message, otherwise, let us know or change your password!</p>
           <br>      
           <p>Merry Shopping!</p>
           <br>     
           `,
-    },
-    loggedOut: {
-      subject: `Account Logout Successful!`,
-      body: `
+  },
+  loggedOut: {
+    subject: `Account Logout Successful!`,
+    body: `
           <p>You logged out of your account. If this was you, kindly ignore this message, otherwise, let us know or change your password!</p>
           <br>   
           <p>Merry Shopping!</p>
           <br>
           `,
-    },
-    recovered: {
-      subject: `Account Reactivation Successful!`,
-      body: `
+  },
+  recovered: {
+    subject: `Account Reactivation Successful!`,
+    body: `
           <p>Your account has been reactivated. If this was you, kindly ignore this message, otherwise, let us know or change your password!<p>
           <br>      
           <p>Merry Shopping!</p>
           <br>
           `,
-    },
-    accountUpdated: {
-      subject: `Account Updated Successfully!`,
-      body: `
+  },
+  accountUpdated: {
+    subject: `Account Updated Successfully!`,
+    body: `
           <p>Your account has been updated successfully!</p>
           <br>  
           <p>Merry Shopping!</p>
           <br>       
           `,
-    },
-    accountDeleted: {
-      subject: `Account Disabled Successfully!`,
-      body: `
+  },
+  accountDeleted: {
+    subject: `Account Disabled Successfully!`,
+    body: `
           <p>Your account has been disabled successfully!</p>
           <br>
           <p>We'll miss you and hope you won't be gone for too long!</p>
           <br>   
           `,
-    },
-    categoryCreated: {
-      subject: `Category Created Successfully!`,
-      body: `
+  },
+  categoryCreated: {
+    subject: `Category Created Successfully!`,
+    body: `
           <p>Your new category has been created successfully!</p>
           <b>
           <p>Merry Shopping!</p>
           <b>  
           `,
-    },
-    categoryUpdated: {
-      subject: `Category Updated Successfully!`,
-      body: `
+  },
+  categoryUpdated: {
+    subject: `Category Updated Successfully!`,
+    body: `
           <p>Your category has been updated successfully!</p>
           <br>  
           <p>Merry Shopping!</p>
           <br>       
           `,
-    },
-    categoryDeleted: {
-      subject: `Category Deleted Successfully!`,
-      body: `
+  },
+  categoryDeleted: {
+    subject: `Category Deleted Successfully!`,
+    body: `
           <p>Your category has been deleted successfully!</p>
           <b>
           <p>Merry Shopping!</p>
           <b>  
           `,
-    },
-    productUploaded: {
-      subject: `Your product was uploaded Successfully!`,
-      body: `
+  },
+  productUploaded: {
+    subject: `Your product was uploaded Successfully!`,
+    body: `
           <p>Your product has been uploaded successfully!</p>
           <b>
           <p>Merry Shopping!</p>
           <b>  
           `,
-    },
-    productUpdated: {
-      subject: `Product Updated Successfully!`,
-      body: `
+  },
+  productUpdated: {
+    subject: `Product Updated Successfully!`,
+    body: `
           <p>Your product has been updated successfully!</p>
           <br>  
           <p>Merry Shopping!</p>
           <br>       
           `,
-    },
-    productDeleted: {
-      subject: `Product Deleted Successfully!`,
-      body: `
+  },
+  productDeleted: {
+    subject: `Product Deleted Successfully!`,
+    body: `
           <p>Your product has been deleted successfully!</p>
           <br>  
           <p>Merry Shopping!</p>
           <br>       
           `,
-    },
-  };
-  
+  },
+};

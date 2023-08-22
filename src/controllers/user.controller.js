@@ -1,6 +1,13 @@
-const { userService } = require("../services/create.service");
-const { hashPassword, verifyPassword } = require("../services/bcrypt.service");
-const { isValidObjectId } = require("../utilities/id.utilities");
+const {
+  userService
+} = require("../services/create.service");
+const {
+  hashPassword,
+  verifyPassword
+} = require("../services/bcrypt.service");
+const {
+  isValidObjectId
+} = require("../utilities/id.utilities");
 const cloudinary = require("../services/cloudinary.service");
 const notify = require("../services/mail.service");
 const Mails = require("../configs/mails.constant.config");
@@ -97,7 +104,7 @@ class UserController {
             success: false,
           });
         }
-          
+
         const updatedPassword = await hashPassword(req.body.newPassword);
         if (updatedPassword) {
           data.password = updatedPassword;
@@ -106,8 +113,16 @@ class UserController {
 
       const _updatedUser = await userService.updateOne(userId, data);
 
-      const { _id, fullname, email, birthday, address, phoneNumber, avatar } =
-        _updatedUser;
+      const {
+        _id,
+        fullname,
+        email,
+        birthday,
+        address,
+        phoneNumber,
+        avatar
+      } =
+      _updatedUser;
       const updatedUser = {
         _id,
         fullname,
@@ -129,7 +144,7 @@ class UserController {
       if (data.email) {
         updateMessages.email = `Your email has been updated successfully!`;
       }
-        
+
       if (data.birthday) {
         updateMessages.birthday = `Your birthday has been updated successfully!`;
       }
@@ -141,7 +156,7 @@ class UserController {
       if (data.phoneNumber) {
         updateMessages.phoneNumber = `Your phone number has been updated successfully!`;
       }
-      
+
       if (data.address) {
         updateMessages.address = `Your address has updated successfully!`;
       }
@@ -206,8 +221,20 @@ class UserController {
       existingUser.deleted = true;
       await existingUser.save();
 
-      const { _id, fullname, email, password, birthday } = existingUser;
-      const deletedUser = { _id, fullname, email, password, birthday };
+      const {
+        _id,
+        fullname,
+        email,
+        password,
+        birthday
+      } = existingUser;
+      const deletedUser = {
+        _id,
+        fullname,
+        email,
+        password,
+        birthday
+      };
 
       await notify.sendMail(
         req.session.user,
@@ -252,8 +279,20 @@ class UserController {
           message: `This user does not exist`,
         });
 
-      const { _id, fullname, email, password, birthday } = _existingUser;
-      const existingUser = { _id, fullname, email, password, birthday };
+      const {
+        _id,
+        fullname,
+        email,
+        password,
+        birthday
+      } = _existingUser;
+      const existingUser = {
+        _id,
+        fullname,
+        email,
+        password,
+        birthday
+      };
 
       // Sends a success message and displays user
       return res.status(200).json({
@@ -272,7 +311,9 @@ class UserController {
   // Getting all users
   async getUsers(req, res) {
     try {
-      const users = await userService.findAll({ deleted: false });
+      const users = await userService.findAll({
+        deleted: false
+      });
 
       // Sends a message if no users exist
       if (!users)
