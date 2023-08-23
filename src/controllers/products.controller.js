@@ -367,7 +367,7 @@ class ProductController {
             const collection = req.query.collection;
             const price = req.query.price;
 
-            // If there's no query, return a message with all rooms
+            // If there's no query, return a message with all products
             if (!title && !size && !collection && !price) {
                 // To display all products without filter
                 const foundProducts = await productService.findAll({
@@ -440,7 +440,7 @@ class ProductController {
                 };
             }
 
-            // Uses the entire filter data gathered from the query to look for rooms on the database that match the criteria provided the status is true.
+            // Uses the entire filter data gathered from the query to look for products on the database that match the criteria provided the status is true.
             const foundProducts = await productService.findAll(filter);
 
             if (!foundProducts) {
